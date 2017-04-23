@@ -1,0 +1,197 @@
+/* 
+## Custom Styles
+## Author: Haley Landon 
+## Company: Magic Leap
+## Assignment: Cloud Front End Assignment
+## Date: April, 2017
+*/
+
+html, body {
+	height: 100%;
+}
+
+/******** Buttons **********/
+.oval-btn{
+	-webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    -ms-border-radius: 10em;
+    -o-border-radius: 10em;
+    border-radius: 10em;
+}
+
+/******** Top Navigation ********/
+
+/* Logo */
+
+img#logo {
+    margin-top: -10px;
+	-webkit-backface-visibility: hidden;
+}
+
+/* Responsive Styles */
+
+@media only screen and (min-width: 768px){
+	.scrolling-navbar {
+		-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+		-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+		transition: background .5s ease-in-out,padding .5s ease-in-out;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	
+	.top-nav-collapse {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.mobile-nav-divider {
+		display: none;
+	}
+}
+
+.navbar .nav-item .nav-link {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.navbar .nav-item .nav-link i.fa {
+	margin-right: 4px;
+}
+
+
+
+/********* Landing Page ***********/
+
+/* Ship Features */
+
+.row .no-padding {
+    padding: 0;
+}
+
+.row .white-border {
+	border: 2px solid #fff;
+}
+
+.row.no-margin {
+    margin-left: 0;
+	margin-right: 0;
+}
+
+.ship-title{
+	background-color: rgba(255,255,255,.7);
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+}
+.ship-title a p {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+	color: #424242;
+}
+.ship-title a p.text-left {
+	float: left;
+}
+.ship-title a p.text-right {
+	float: right;
+}
+
+/* Carousel */
+        
+#main-carousel {
+	height: 50%;
+	margin-top: 50px;
+}
+
+@media (max-width: 776px) {
+	.carousel {
+		height: 100%;
+	}
+}
+
+.carousel-item,
+.active {
+	height: 100%;
+}
+
+.carousel-inner {
+	height: 100%;
+}
+
+
+/******** Details Page *********/
+        
+main.mt-5 {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.widget-wrapper {
+	padding-bottom: 2rem;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 2rem;
+}
+ 
+.reviews {
+	text-align: center;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.price {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-top: -2px;
+}
+
+.price .tag {
+	margin: 0;
+}
+  .navbar {
+	background-color: #676b74;
+}
+
+.feature-title {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.features-small {
+	padding-top: 30px;
+}
+
+.features-small .fa {
+    font-size: 1.25rem;
+}
+
+.card .card-circle {
+    border: 2px solid #e0e0e0;
+    height: 120px;
+    width: 120px;
+    margin-bottom: 2rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.card .card-circle .fa {
+    font-size: 4rem;
+}
