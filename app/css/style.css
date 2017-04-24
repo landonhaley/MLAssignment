@@ -6,7 +6,7 @@
 ## Date: April, 2017
 */
 
-html, body {
+html, body, #root, .full-height {
 	height: 100%;
 }
 

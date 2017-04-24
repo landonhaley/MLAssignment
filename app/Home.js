@@ -12,7 +12,7 @@ class Home extends Component {
   render() {
 	
     return (
-      <div>
+      <div className="full-height">
         <Carousel />
         <MainSection products={PRODUCTS}/>
       </div>

@@ -16,15 +16,7 @@ class App extends Component {
   }
 }
 
-const Nav = () => (
-  <div>
-    <Link to='/'>Home</Link>&nbsp;
-    <Link to='/details'>Details</Link>
-  </div>
-)
-
-const Container = (props) => <div>
-  <Nav />
+const Container = (props) => <div className="full-height">
   {props.children}
 </div>
 

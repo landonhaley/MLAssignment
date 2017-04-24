@@ -13,7 +13,7 @@ class TopNav extends Component {
 			<div className="collapse navbar-collapse" id="navbarNav">
 				<ul className="navbar-nav mr-auto">
 					<li className="nav-item active">
-						<a className="nav-link">
+						<a href="#/" className="nav-link">
 							Home 
 							<span className="sr-only">
 								(current)
@@ -58,5 +58,6 @@ class TopNav extends Component {
 		</div>
 	}
 }
+
 
 export default TopNav
