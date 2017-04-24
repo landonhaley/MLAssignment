@@ -10,6 +10,15 @@ html, body {
 	height: 100%;
 }
 
+.wattos-primary-color {
+	color: #929FBA!important;
+}
+
+.wattos-secondary-color {
+	color: #5b477b!important;
+}
+
+
 /******** Buttons **********/
 .oval-btn{
 	-webkit-border-radius: 10em;
@@ -17,6 +26,10 @@ html, body {
     -ms-border-radius: 10em;
     -o-border-radius: 10em;
     border-radius: 10em;
+}
+
+.wattos-secondary-btn {
+	background: #5b477b;
 }
 
 /******** Top Navigation ********/
@@ -79,6 +92,10 @@ img#logo {
 	margin-right: 0;
 }
 
+p.no-margin {
+	margin-bottom: 0;
+}
+
 .ship-title{
 	background-color: rgba(255,255,255,.7);
 	position: absolute;
@@ -86,16 +103,16 @@ img#logo {
     width: 100%;
     padding: 1rem;
 }
-.ship-title a p {
+.ship-title p, .ship-title p a{
     padding: 0;
     margin: 0;
     font-size: 1rem;
 	color: #424242;
 }
-.ship-title a p.text-left {
+.ship-title p.text-left {
 	float: left;
 }
-.ship-title a p.text-right {
+.ship-title p.text-right {
 	float: right;
 }
 
@@ -103,7 +120,7 @@ img#logo {
         
 #main-carousel {
 	height: 50%;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 @media (max-width: 776px) {
@@ -121,7 +138,23 @@ img#logo {
 	height: 100%;
 }
 
+#first-slide {
+	background-image: url('../img/carousel/slide1.jpg'); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
 
+#second-slide {
+	background-image: url('../img/carousel/slide3.jpg'); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+
+#third-slide {
+	background-image: url('../img/carousel/slide4.png'); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
 /******** Details Page *********/
         
 main.mt-5 {
@@ -194,4 +227,10 @@ main.mt-5 {
 
 .card .card-circle .fa {
     font-size: 4rem;
+}
+
+img.starfighter-class {
+	-ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(20deg);
 }

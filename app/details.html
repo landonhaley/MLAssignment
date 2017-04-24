@@ -121,7 +121,7 @@
 										<!--First row-->
 										<div class="row">
 											<div class="col-1">
-												<i class="fa fa-rebel deep-purple-text"></i>
+												<i class="fa fa-rebel wattos-secondary-color"></i>
 											</div>
 											<div class="col-10">
 												<h5 class="feature-title">Shielding</h4>
@@ -134,7 +134,7 @@
 										<!--Second row-->
 										<div class="row">
 											<div class="col-1">
-												<i class="fa fa-rebel deep-purple-text"></i>
+												<i class="fa fa-rebel wattos-secondary-color"></i>
 											</div>
 											<div class="col-10">
 												<h5 class="feature-title">Hull</h5>
@@ -147,7 +147,7 @@
 										<!--Third row-->
 										<div class="row">
 											<div class="col-1">
-												<i class="fa fa-rebel deep-purple-text"></i>
+												<i class="fa fa-rebel wattos-secondary-color"></i>
 											</div>
 											<div class="col-10">
 												<h5 class="feature-title">Sensor</h5>
@@ -164,7 +164,7 @@
 										<!--First row-->
 										<div class="row">
 											<div class="col-1">
-												<i class="fa fa-rebel deep-purple-text"></i>
+												<i class="fa fa-rebel wattos-secondary-color"></i>
 											</div>
 											<div class="col-10">
 												<h5 class="feature-title">Targeting</h5>
@@ -177,7 +177,7 @@
 										<!--Second row-->
 										<div class="row">
 											<div class="col-1">
-												<i class="fa fa-rebel deep-purple-text"></i>
+												<i class="fa fa-rebel wattos-secondary-color"></i>
 											</div>
 											<div class="col-10">
 												<h5 class="feature-title">Amament</h5>
@@ -190,7 +190,7 @@
 										<!--Third row-->
 										<div class="row">
 											<div class="col-1">
-												<i class="fa fa-rebel deep-purple-text"></i>
+												<i class="fa fa-rebel wattos-secondary-color"></i>
 											</div>
 											<div class="col-10">
 												<h5 class="feature-title">Communications</h5>
@@ -211,16 +211,6 @@
 					</div>
 					<!--/.First row-->
 
-					<!--Second row-->
-					<div class="row">
-						
-						<!--Heading-->
-							<div class="col reviews wow fadeIn" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
-								<h2 class="h2-responsive">Other</h2>
-							</div>
-					</div>
-					<!--/.Second row-->
-
 				</div>
 				<!--/.Main column-->
 				
@@ -236,14 +226,16 @@
 									<h5>Sienar Fleet Systems</h5>
 									<div class="flex-center">
 										<div class="card-circle">
-											<i class="fa fa-home blue-text"></i>
+											<img class="starfighter-class" src="img/svg/Starfighter.svg" height="80" width="70" alt="Starfighter" />
 										</div>
 									</div>
 
 									<!--Price-->
 									<h2><strong>149,999 credits</strong></h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa pariatur id nobis accusamus deleniti cumque hic laborum.</p>
-									<a class="btn btn-primary oval-btn waves-effect waves-light">Buy now</a>
+									<p class="no-margin">Certified pre-owned</p>
+									<p class="no-margin">No money down</p>
+									<p>0% financing for 12 months</p>
+									<a class="btn wattos-secondary-btn oval-btn waves-effect waves-light">Buy now</a>
 								</div>
 							</div>
 
@@ -256,19 +248,19 @@
 						<div class="list-group">
                             <div class="list-group-item row no-margin">
 								<div class="col-lg-8 col-md-8 col-sm-6 no-padding">Length</div>
-								<div class="col-lg-4 col-md-4 col-sm-6 no-padding text-lg-right text-md-right grey-text">8.99 m</div>
+								<div class="col-lg-4 col-md-4 col-sm-6 no-padding text-lg-right text-md-right text-sm-right grey-text">8.99 m</div>
 							</div>
                             <div class="list-group-item row no-margin">
 								<div class="col-lg-8 col-md-8 col-sm-6 no-padding">Max Acceleration</div>
-								<div class="col-lg-4 col-md-4 col-sm-6 no-padding text-lg-right text-md-right grey-text">4,100 G</div>
+								<div class="col-lg-4 col-md-4 col-sm-6 no-padding text-lg-right text-md-right text-sm-right grey-text">4,100 G</div>
 							</div>
                             <div class="list-group-item row no-margin">
 								<div class="col-lg-8 col-md-8 col-sm-6 no-padding">MGLT</div>
-								<div class="col-lg-4 col-md-4 col-sm-6 no-padding text-lg-right text-md-right grey-text">100 MGLT</div>
+								<div class="col-lg-4 col-md-4 col-sm-6 no-padding text-lg-right text-md-right text-sm-right grey-text">100 MGLT</div>
 							</div>
                             <div class="list-group-item row no-margin">
 								<div class="col-lg-8 col-md-8 col-sm-6 no-padding">Max Atmospheric Speed</div>
-								<div class="col-lg-4 col-md-4 col-sm-6 no-padding text-lg-right text-md-right grey-text">1,200 km/h</div>
+								<div class="col-lg-4 col-md-4 col-sm-6 no-padding text-lg-right text-md-right text-sm-right grey-text">1,200 km/h</div>
 							</div>
                         </div>
 					</div>
@@ -278,6 +270,9 @@
 
 			</div>
 		</div>
+		
+		<div id="root"></div>
+		<div id="root2"></div>
 
 		<!--Footer-->
 		<footer class="page-footer center-on-small-only">
@@ -368,7 +363,6 @@
 		<!--/.Footer-->
 	</main>
 	
-	
     <!-- SCRIPTS -->
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
@@ -378,11 +372,8 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
-	<!-- React -->
-	<script src="https://unpkg.com/react@15/dist/react.js"></script>
-	<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
-    <script type="text/babel" src="js/app.jsx"></script>
+	<!-- React & Others Bundle -->
+	<script src="./bundle.js"></script>
 	<script>
 		new WOW().init();
 	</script>
