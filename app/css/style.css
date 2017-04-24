@@ -234,3 +234,23 @@ img.starfighter-class {
     -webkit-transform: rotate(7deg);
     transform: rotate(20deg);
 }
+
+.spacer-container {
+	height: 30px;
+}
+
+.sidebar {
+	visibility: visible; 
+	animation-delay: 0.2s; 
+	animation-name: fadeIn;
+}
+
+.specs {
+	visibility: visible; 
+	animation-delay: 0.4s; 
+	animation-name: fadeIn;
+}
+
+p.grey-text {
+	height: 24px;
+}

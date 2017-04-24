@@ -14,15 +14,238 @@ class Details extends Component {
 
 class ItemListing extends Component {
   render() {
-	var ship = getIndex(this.props.item, this.props.products, "name");
-	console.log(ship.manufacturer);
+	var _ship = getIndex(this.props.item, this.props.products, "name");
     return (
-		<div>
-			<h1>Hello, {this.props.item}</h1>
+		<main className="mt-5">
+			<div className="container">
+				<div className="row">
+					<MainColumn ship={_ship} />
+					<Sidebar ship={_ship} />
+				</div>
+			</div>
+		</main>
+	);
+  }
+}
+
+class MainColumn extends Component {
+  render() {
+	var _ship = this.props.ship;
+    return (
+		<div className="col-lg-8">
+			<div className="row wow fadeIn specs" data-wow-delay="0.2s">
+				<div className="col-md-12">
+					<div className="product-wrapper">
+						<PhotoSlider ship={_ship} />
+						<br />
+						<h2 className="h2-responsive">Twin Ion Engine Starfighter</h2>
+						<hr />
+						<ProductData ship={_ship} />
+					</div>
+				</div>
+			</div>
 		</div>
 	);
   }
 }
+
+class PhotoSlider extends Component {
+  render() {
+	var _ship = this.props.ship;
+    return (
+		<div id="carousel-example-1z" className="carousel slide carousel-fade" data-ride="carousel">
+			<ol className="carousel-indicators">
+				<li data-target="#carousel-example-1z" data-slide-to="0" className="active"></li>
+				<li data-target="#carousel-example-1z" data-slide-to="1"></li>
+				<li data-target="#carousel-example-1z" data-slide-to="2"></li>
+			</ol>
+			<div className="carousel-inner" role="listbox">
+				<div className="carousel-item active">
+					<div className="view overlay hm-white-light z-depth-1-half">
+						<img src="img/landing_page/spaceship3.jpg" className="img-fluid " alt="" />
+						<div className="mask">
+						</div>
+						<h3 className="price"><span className="badge red darken-2">Hot Deal</span></h3>
+					</div>
+				</div>
+				<div className="carousel-item">
+					<div className="view overlay hm-white-light z-depth-1-half">
+						<img src="img/landing_page/spaceship4.jpg" className="img-fluid " alt="" />
+						<div className="mask">
+						</div>
+						<h3 className="price"><span className="badge red darken-2">Hot Deal</span></h3>
+					</div>
+				</div>
+				<div className="carousel-item">
+					<div className="view overlay hm-white-light z-depth-1-half">
+						<img src="img/landing_page/spaceship5.jpg" className="img-fluid " alt="" />
+						<div className="mask">
+						</div>
+						<h3 className="price"><span className="badge red darken-2">Hot Deal</span></h3>
+					</div>
+				</div>
+			</div>
+			<a className="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+				<span className="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span className="sr-only">Previous</span>
+			</a>
+			<a className="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+				<span className="carousel-control-next-icon" aria-hidden="true"></span>
+				<span className="sr-only">Next</span>
+			</a>
+		</div>
+	);
+  }
+}
+
+
+class ProductData extends Component {
+  render() {
+	var _ship = this.props.ship;
+    return (
+		<div className="row features-small">
+			<div className="col-md-6">
+				<div className="row">
+					<div className="col-1">
+						<i className="fa fa-rebel wattos-secondary-color"></i>
+					</div>
+					<div className="col-10">
+						<h5 className="feature-title">Shielding</h5>
+						<p className="grey-text">{this.props.ship.techspecs.shielding} </p>
+						<div className="spacer-container"></div>
+					</div>
+				</div>
+				<div className="row">
+					<div className="col-1">
+						<i className="fa fa-rebel wattos-secondary-color"></i>
+					</div>
+					<div className="col-10">
+						<h5 className="feature-title">Hull</h5>
+						<p className="grey-text">{this.props.ship.techspecs.hull} </p>
+						<div className="spacer-container"></div>
+					</div>
+				</div>
+				<div className="row">
+					<div className="col-1">
+						<i className="fa fa-rebel wattos-secondary-color"></i>
+					</div>
+					<div className="col-10">
+						<h5 className="feature-title">Sensor</h5>
+						<p className="grey-text">{this.props.ship.techspecs.sensor} </p>
+						<div className="spacer-container"></div>
+					</div>
+				</div>
+			</div>
+			<div className="col-md-6">
+				<div className="row">
+					<div className="col-1">
+						<i className="fa fa-rebel wattos-secondary-color"></i>
+					</div>
+					<div className="col-10">
+						<h5 className="feature-title">Targeting</h5>
+						<p className="grey-text">{this.props.ship.techspecs.targeting} </p>
+						<div className="spacer-container"></div>
+					</div>
+				</div>
+				<div className="row">
+					<div className="col-1">
+						<i className="fa fa-rebel wattos-secondary-color"></i>
+					</div>
+					<div className="col-10">
+						<h5 className="feature-title">Amament</h5>
+						<p className="grey-text">{this.props.ship.techspecs.amament} </p>
+						<div className="spacer-container"></div>
+					</div>
+				</div>
+				<div className="row">
+					<div className="col-1">
+						<i className="fa fa-rebel wattos-secondary-color"></i>
+					</div>
+					<div className="col-10">
+						<h5 className="feature-title">Communications</h5>
+						<p className="grey-text">{this.props.ship.techspecs.communications} </p>
+						<div className="spacer-container"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+  }
+}
+
+
+
+class Sidebar extends Component {
+  render() {
+	var _ship = this.props.ship;
+    return (
+		<div className="col-lg-4 wow fadeIn sidebar" data-wow-delay="0.4s">
+			<Pricing ship={_ship} />
+			<Specs ship={_ship} />
+		</div>
+	);
+  }
+}
+
+class Pricing extends Component {
+  render() {
+    return (
+		<div className="widget-wrapper">
+			<div className="card">
+				<div className="text-center">
+					<div className="card-block">
+						<h5>{this.props.ship.manufacturer}</h5>
+						<div className="flex-center">
+							<div className="card-circle">
+								<img className="starfighter-className" src="img/svg/Starfighter.svg" height="80" width="70" alt="Starfighter" />
+							</div>
+						</div>
+						<h2><strong>{this.props.ship.price}</strong></h2>
+						<p className="no-margin">Certified pre-owned</p>
+						<p className="no-margin">No money down</p>
+						<p>0% financing for 12 months</p>
+						<a className="btn wattos-secondary-btn oval-btn waves-effect waves-light">Buy now</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	);
+  }
+}
+
+
+class Specs extends Component {
+  render() {
+    return (
+		<div className="widget-wrapper wow fadeIn specs" data-wow-delay="0.4s">
+			<h4>Specs</h4>
+			<br />
+			<div className="list-group">
+				<div className="list-group-item row no-margin">
+					<div className="col-lg-8 col-md-8 col-sm-6 no-padding">Length</div>
+					<div className="col-lg-4 col-md-4 col-sm-6 no-padding text-lg-right text-md-right text-sm-right grey-text">{this.props.ship.techspecs.length}</div>
+				</div>
+				<div className="list-group-item row no-margin">
+					<div className="col-lg-8 col-md-8 col-sm-6 no-padding">Max Acceleration</div>
+					<div className="col-lg-4 col-md-4 col-sm-6 no-padding text-lg-right text-md-right text-sm-right grey-text">{this.props.ship.techspecs.maxaccel}</div>
+				</div>
+				<div className="list-group-item row no-margin">
+					<div className="col-lg-8 col-md-8 col-sm-6 no-padding">MGLT</div>
+					<div className="col-lg-4 col-md-4 col-sm-6 no-padding text-lg-right text-md-right text-sm-right grey-text">{this.props.ship.techspecs.MGLT}</div>
+				</div>
+				<div className="list-group-item row no-margin">
+					<div className="col-lg-8 col-md-8 col-sm-6 no-padding">Max Atmospheric Speed</div>
+					<div className="col-lg-4 col-md-4 col-sm-6 no-padding text-lg-right text-md-right text-sm-right grey-text">{this.props.ship.techspecs.maxatmosphericspeed}</div>
+				</div>
+			</div>
+		</div>
+	);
+  }
+}
+
+
+
 
 function getIndex(value, arr, prop) {
 	for(var i = 0; i < arr.length; i++) {
