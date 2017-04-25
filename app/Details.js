@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Footer from './Footer'
 
 class Details extends Component {
   render() {
@@ -7,6 +8,7 @@ class Details extends Component {
 			<ItemListing 
 			item={this.props.location.query.item}
 			products={PRODUCTS}/>
+			<Footer />
 		</div>
     );
   }
@@ -14,7 +16,7 @@ class Details extends Component {
 
 class ItemListing extends Component {
   render() {
-	var _ship = getIndex(this.props.item, this.props.products, "name");
+	var _ship = getElem(this.props.item, this.props.products, "name");
     return (
 		<main className="mt-5">
 			<div className="container">
@@ -38,7 +40,7 @@ class MainColumn extends Component {
 					<div className="product-wrapper">
 						<PhotoSlider ship={_ship} />
 						<br />
-						<h2 className="h2-responsive">Twin Ion Engine Starfighter</h2>
+						<h2 className="h2-responsive">{this.props.ship.name} <small className="text-muted">{this.props.ship.class}</small></h2>
 						<hr />
 						<ProductData ship={_ship} />
 					</div>
@@ -70,7 +72,7 @@ class PhotoSlider extends Component {
 				</div>
 				<div className="carousel-item">
 					<div className="view overlay hm-white-light z-depth-1-half">
-						<img src="img/landing_page/spaceship4.jpg" className="img-fluid " alt="" />
+						<img src="img/landing_page/SpaceshipInterior.jpg" className="img-fluid " alt="" />
 						<div className="mask">
 						</div>
 						<h3 className="price"><span className="badge red darken-2">Hot Deal</span></h3>
@@ -78,7 +80,7 @@ class PhotoSlider extends Component {
 				</div>
 				<div className="carousel-item">
 					<div className="view overlay hm-white-light z-depth-1-half">
-						<img src="img/landing_page/spaceship5.jpg" className="img-fluid " alt="" />
+						<img src="img/landing_page/SpaceshipInterior2.jpg" className="img-fluid " alt="" />
 						<div className="mask">
 						</div>
 						<h3 className="price"><span className="badge red darken-2">Hot Deal</span></h3>
@@ -247,7 +249,7 @@ class Specs extends Component {
 
 
 
-function getIndex(value, arr, prop) {
+function getElem(value, arr, prop) {
 	for(var i = 0; i < arr.length; i++) {
 		if(arr[i][prop] === value) {
 			return arr[i];

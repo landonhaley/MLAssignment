@@ -124,7 +124,7 @@ p.no-margin {
 }
 
 @media (max-width: 776px) {
-	.carousel {
+	#main-carousel {
 		height: 100%;
 	}
 }

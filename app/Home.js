@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import Footer from './Footer'
 
 fetch('http://demo7475333.mockable.io/spaceships').then(function(response) { 
 	// Convert to JSON
@@ -15,6 +16,7 @@ class Home extends Component {
       <div className="full-height">
         <Carousel />
         <MainSection products={PRODUCTS}/>
+		<Footer />
       </div>
     );
   }
@@ -23,11 +25,11 @@ class Home extends Component {
 class Carousel extends Component {
   render() {
     return (
-      <div id="main-carousel" className="carousel slide carousel-fade white-text" data-ride="carousel" data-interval="false">
-			<ol className="carousel-indicators">
-			<li data-target="#carousel-example-3" data-slide-to="0" className="active"></li>
-			<li data-target="#carousel-example-3" data-slide-to="1"></li>
-			<li data-target="#carousel-example-3" data-slide-to="2"></li>
+      <div id="main-carousel" className="carousel slide carousel-fade white-text" data-ride="carousel" data-interval="false" data-interval="5000">
+		<ol className="carousel-indicators">
+			<li data-target="#main-carousel" data-slide-to="0" className="active"></li>
+			<li data-target="#main-carousel" data-slide-to="1"></li>
+			<li data-target="#main-carousel" data-slide-to="2"></li>
 		</ol> 
 		<div className="carousel-inner" role="listbox">
 			<div id="first-slide" className="carousel-item active view hm-black-light">
@@ -39,7 +41,7 @@ class Carousel extends Component {
 							<p>with SFS S-c3.8 multi-range TAG, Titanium alloy hull, and 100 MGLT</p>
 						</li>
 						<li>
-							<a target="_blank" href="http://mdbootstrap.com/getting-started/" className="btn btn-info btn-lg waves-effect waves-light" rel="nofollow">See more!</a>
+							<a target="_blank" href="#" className="btn btn-info btn-lg waves-effect waves-light" rel="nofollow">See more!</a>
 						</li>
 					</ul>
 				</div>			
@@ -54,7 +56,7 @@ class Carousel extends Component {
 							<p>See why we put honesty before sales </p>
 						</li>
 						<li>
-							<a target="_blank" href="http://mdbootstrap.com/bootstrap-tutorial/" className="btn btn-info btn-lg waves-effect waves-light" rel="nofollow">Read more</a>
+							<a target="_blank" href="#" className="btn btn-info btn-lg waves-effect waves-light" rel="nofollow">Read more</a>
 						</li>
 					</ul>
 				</div>
@@ -63,22 +65,22 @@ class Carousel extends Component {
 				<div className="full-bg-img flex-center white-text">
 					<ul className="animated fadeIn col-md-12">
 						<li>
-							<h1 className="h1-responsive">Most trusted used spaceship dealership in Mos Espa</h1></li>
+							<h1 className="h1-responsive">Come see what we have in stock!</h1></li>
 						<li>
-							<p>8 Reasons why you need to spend more time in nature</p>
+							<p>Stop by any of our 3 locations in the Mos Espa area</p>
 						</li>
 						<li>
-							<a target="_blank" href="http://mdbootstrap.com/forums/forum/support/" className="btn btn-default btn-lg waves-effect waves-light" rel="nofollow">Read more</a>
+							<a target="_blank" href="#" className="btn btn-primary btn-lg waves-effect waves-light" rel="nofollow">Read more</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div> 
-		<a className="carousel-control-prev" href="#carousel-example-3" role="button" data-slide="prev">
+		<a className="carousel-control-prev" href="#main-carousel" role="button" data-slide="prev">
 			<span className="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span className="sr-only">Previous</span>
 		</a>
-		<a className="carousel-control-next" href="#carousel-example-3" role="button" data-slide="next">
+		<a className="carousel-control-next" href="#main-carousel" role="button" data-slide="next">
 			<span className="carousel-control-next-icon" aria-hidden="true"></span>
 			<span className="sr-only">Next</span>
 		</a>
