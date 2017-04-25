@@ -12,12 +12,9 @@ class TopNav extends Component {
 			</a>
 			<div className="collapse navbar-collapse" id="navbarNav">
 				<ul className="navbar-nav mr-auto">
-					<li className="nav-item active">
+					<li className="nav-item">
 						<a href="#/" className="nav-link">
-							Home 
-							<span className="sr-only">
-								(current)
-							</span>
+							Home
 						</a>
 					</li>
 					<li className="nav-item">

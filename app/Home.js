@@ -105,7 +105,7 @@ class MainSection extends Component {
 					<div className="col-lg-6 col-md-6 col-sm-12 no-padding">
 						<div className="row no-margin">
 							<div className="col-12 no-padding white-border  wow fadeInUp">
-								<img src="img/landing_page/spaceship1_back.jpg" className="img-fluid" alt="Responsive image" />
+								<img src="img/landing_page/Twin Ion Engine Starfighter.jpg" className="img-fluid" alt="Responsive image" />
 								 <div className="ship-title">
 									<p className="text-left">{ships[0]} <span className="badge red">New</span></p> 
 									<p className="text-right"><i className="fa fa-chevron-right"></i></p>
@@ -114,14 +114,14 @@ class MainSection extends Component {
 						</div>
 						<div className="row no-margin">
 							<div className="col-lg-6 col-md-12 col-sm-12 no-padding white-border wow fadeInUp" data-wow-delay="0.2s">
-								<img src="img/landing_page/spaceship2.jpg" className="img-fluid" alt="Responsive image" />
+								<img src="img/landing_page/T-65 X-wing Starfighter.jpg" className="img-fluid" alt="Responsive image" />
 								<div className="ship-title">
 									<p className="text-left">{ships[1]}</p> 
 									<p className="text-right"><i className="fa fa-chevron-right"></i></p>
 								</div>
 							</div>
 							<div className="col-lg-6 col-md-12 col-sm-12 no-padding white-border wow fadeInUp " data-wow-delay="0.2s">
-								<img src="img/landing_page/spaceship8.jpg" className="img-fluid" alt="Responsive image" />
+								<img src="img/landing_page/Y-wing Starfighter.jpg" className="img-fluid" alt="Responsive image" />
 								<div className="ship-title">
 									<p className="text-left">{ships[2]}</p> 
 									<p className="text-right"><i className="fa fa-chevron-right"></i></p>
@@ -132,14 +132,14 @@ class MainSection extends Component {
 					<div className="col-lg-6 col-md-6 col-sm-12 no-padding">
 						<div className="row no-margin">
 							<div className="col-lg-6 col-md-12 col-sm-12 no-padding white-border wow fadeInUp">
-								<img src="img/landing_page/spaceship4.jpg" className="img-fluid" alt="Responsive image" />
+								<img src="img/landing_page/YT-1300 Light Freighter.jpg" className="img-fluid" alt="Responsive image" />
 								<div className="ship-title">
 									<p className="text-left">{ships[3]}</p> 
 									<p className="text-right"><i className="fa fa-chevron-right"></i></p>
 								</div>
 							</div>
 							<div className="col-lg-6 col-md-12 col-sm-12 no-padding white-border wow fadeInUp">
-								<img src="img/landing_page/spaceship5.jpg" className="img-fluid" alt="Responsive image" />
+								<img src="img/landing_page/Alpha-class Xg-1 Star Wing.jpg" className="img-fluid" alt="Responsive image" />
 								<div className="ship-title">
 									<p className="text-left">{ships[4]}</p> 
 									<p className="text-right"><i className="fa fa-chevron-right"></i></p>
@@ -148,7 +148,7 @@ class MainSection extends Component {
 						</div>
 						<div className="row no-margin">
 							<div className="col-12 no-padding white-border wow fadeInUp" data-wow-delay="0.2s">
-								<img src="img/landing_page/spaceship6.jpg" className="img-fluid" alt="Responsive image" />
+								<img src="img/landing_page/Lambda-class T-4a shuttle.jpg" className="img-fluid" alt="Responsive image" />
 								<div className="ship-title">
 									<p className="text-left">{ships[5]}</p> 
 									<p className="text-right"><i className="fa fa-chevron-right"></i></p>
@@ -160,14 +160,14 @@ class MainSection extends Component {
 				
 				<div className="row no-margin">
 					<div className="col-lg-6 col-md-6 col-sm-12 no-padding white-border wow fadeInUp" data-wow-delay="0.4s">
-						<img src="img/landing_page/spaceship9.jpg" className="img-fluid" alt="Responsive image" />
+						<img src="img/landing_page/RZ-1 A-wing interceptor.jpg" className="img-fluid" alt="Responsive image" />
 						<div className="ship-title">
 							<p className="text-left">{ships[6]}</p> 
 							<p className="text-right"><i className="fa fa-chevron-right"></i></p>
 						</div>
 					</div>
 					<div className="col-lg-6 col-md-6 col-sm-12 no-padding white-border wow fadeInUp" data-wow-delay="0.4s">
-						<img src="img/landing_page/spaceship3.jpg" className="img-fluid" alt="Responsive image" />
+						<img src="img/landing_page/B-wing heavy assault starfighter.jpg" className="img-fluid" alt="Responsive image" />
 						<div className="ship-title">
 							<p className="text-left">{ships[7]}</p> 
 							<p className="text-right"><i className="fa fa-chevron-right"></i></p>

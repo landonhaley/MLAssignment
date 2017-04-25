@@ -54,6 +54,7 @@ class MainColumn extends Component {
 class PhotoSlider extends Component {
   render() {
 	var _ship = this.props.ship;
+	var img = "img/landing_page/" + _ship.name + ".jpg"
     return (
 		<div id="carousel-example-1z" className="carousel slide carousel-fade" data-ride="carousel">
 			<ol className="carousel-indicators">
@@ -64,7 +65,7 @@ class PhotoSlider extends Component {
 			<div className="carousel-inner" role="listbox">
 				<div className="carousel-item active">
 					<div className="view overlay hm-white-light z-depth-1-half">
-						<img src="img/landing_page/spaceship3.jpg" className="img-fluid " alt="" />
+						<img src={img} className="img-fluid " alt="" />
 						<div className="mask">
 						</div>
 						<h3 className="price"><span className="badge red darken-2">Hot Deal</span></h3>

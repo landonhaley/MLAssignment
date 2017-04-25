@@ -1,8 +1,6 @@
-# Beginner's Guide to React Router Repo
+# Front End Assignment
 
-> This tutorial uses React Router version 2.0.1
-
-This goes along with the medium post [Beginner's Guide to React Router](https://medium.com/p/53094349669/)
+> The project needs a webpack dev server to compile the ReactJS files.  Follow the instructions below to install the server.
 
 **To get started with this project, do the following:**
 
@@ -15,3 +13,7 @@ This goes along with the medium post [Beginner's Guide to React Router](https://
 npm install
 npm start
 ```
+
+**To view the application:**
+1. Open up a browser window
+2. Navigate to http://localhost:8080/
