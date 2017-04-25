@@ -254,3 +254,7 @@ img.starfighter-class {
 p.grey-text {
 	height: 24px;
 }
+
+.photoslider {
+	max-width: 730px;
+}

@@ -65,7 +65,7 @@ class PhotoSlider extends Component {
 			<div className="carousel-inner" role="listbox">
 				<div className="carousel-item active">
 					<div className="view overlay hm-white-light z-depth-1-half">
-						<img src={img} className="img-fluid " alt="" />
+						<img src={img} className="img-fluid photoslider" alt="" />
 						<div className="mask">
 						</div>
 						<h3 className="price"><span className="badge red darken-2">Hot Deal</span></h3>
@@ -73,7 +73,7 @@ class PhotoSlider extends Component {
 				</div>
 				<div className="carousel-item">
 					<div className="view overlay hm-white-light z-depth-1-half">
-						<img src="img/landing_page/SpaceshipInterior.jpg" className="img-fluid " alt="" />
+						<img src="img/landing_page/SpaceshipInterior.jpg" className="img-fluid photoslider" alt="" />
 						<div className="mask">
 						</div>
 						<h3 className="price"><span className="badge red darken-2">Hot Deal</span></h3>
@@ -81,7 +81,7 @@ class PhotoSlider extends Component {
 				</div>
 				<div className="carousel-item">
 					<div className="view overlay hm-white-light z-depth-1-half">
-						<img src="img/landing_page/SpaceshipInterior2.jpg" className="img-fluid " alt="" />
+						<img src="img/landing_page/SpaceshipInterior2.jpg" className="img-fluid photoslider" alt="" />
 						<div className="mask">
 						</div>
 						<h3 className="price"><span className="badge red darken-2">Hot Deal</span></h3>

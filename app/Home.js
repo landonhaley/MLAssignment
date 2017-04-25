@@ -2,13 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'react-router'
 import Footer from './Footer'
 
-fetch('http://demo7475333.mockable.io/spaceships').then(function(response) { 
-	// Convert to JSON
-	return response.json();
-}).then(function(j) {
-	
-}); 
-
 class Home extends Component {
   render() {
 	
