@@ -1,4 +1,8 @@
-# Front End Assignment
+Front End Assignment
+
+**To pull down the assignment:**
+1. Navigate to https://github.com/landonhaley/MLAssignment
+2. Clone or download repo
 
 > The project needs a webpack dev server to compile the ReactJS files.  Follow the instructions below to install the server.
 
